@@ -14,3 +14,7 @@ data:
       name: Email
       url: 'mailto:tonysm@hey.com'
       icon: site/social-icons/email.svg
+    -
+      name: YouTube
+      url: 'https://www.youtube.com/channel/UCGtfJjAR5JeBPAmxN_ZHx4Q?view_as=subscriber'
+      icon: site/social-icons/youtube.svg

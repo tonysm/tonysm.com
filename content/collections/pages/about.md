@@ -1,11 +1,17 @@
 ---
 title: About
 updated_by: 9e11e5d3-3254-4ab6-a911-96f8161b9541
-updated_at: 1599610370
+updated_at: 1599664715
 template: page
 id: 62136fa2-9e5c-4c38-a894-a2753f02f5ff
 ---
-Hi, I’m Tony. A full-stack software engineer from Brazil. I have about 9 years of professional experience in web development. I have a college degree in System Analysis (4 years), and an additional specialization (+2 years) in Software Engineering. Recently, I’ve worked with backend teams building REST APIs for a variety of services/apps - mostly in PHP, but I also have interests in other languages and frameworks like Ruby and Ruby on Rails or Elixir and the Phoenix framework. I’ve also done front-end development in React and Vue. I love solving real problems in code. I also have some experience with Docker and Kubernetes, as well as cloud environments like AWS and DigitalOcean. Linux is my main OS of choice.
+Hi, I’m Tony. A full-stack software engineer from Brazil. I have about 9 years of professional experience in web development.
+
+I have a college degree in System Analysis (4 years), and an additional specialization (+2 years) in Software Engineering. 
+
+Recently, I’ve worked with backend teams building REST APIs for a variety of services/apps - mostly in PHP, but I also have interests in other languages and frameworks like Ruby and Ruby on Rails or Elixir and the Phoenix framework.
+
+I’ve done front-end development as well in React and Vue. I love solving real problems in code. I also have some experience with Docker and Kubernetes, as well as cloud environments like AWS and DigitalOcean. Linux is my main OS of choice.
 
 ## Experience
 
