@@ -4,13 +4,13 @@ data:
   social:
     -
       name: Twitter
-      url: 'https://twitter.com/jackmcdade'
+      url: 'https://twitter.com/tonysmdev/'
       icon: site/social-icons/twitter.svg
     -
       name: Github
-      url: 'https://github.com/statamic/starter-kit-cool-writings'
+      url: 'https://github.com/tonysm/'
       icon: site/social-icons/github.svg
     -
       name: Email
-      url: 'mailto:jack@statamic.com'
+      url: 'mailto:tonysm@hey.com'
       icon: site/social-icons/email.svg
