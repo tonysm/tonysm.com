@@ -3,11 +3,11 @@
     <article class="lg:py-32 max-w-2xl mx-auto">
         <h1>{{ title }}</h1>
         <div class="bg-gray-800 inline-block text-sm mb-16 pr-4 pl-16 -ml-16 uppercase tracking-widest text-white py-1 rounded-r-full">
-            Published
+            <span>Published</span>
             {{ if topics }}
-                in {{ topics }}<a href="{{ url }}" class="text-teal-light no-underline hover:text-white">{{ title }}</a>{{ /topics }}
+                in <span class="-mx-1">{{ topics }}<a href="{{ url }}" class="mx-1 text-teal-light no-underline space-x-2 hover:text-white">{{ title }}</a>{{ /topics }}</span>
             {{ /if }}
-            on {{ date format="M j, Y" }}
+            <span>on {{ date format="M j, Y" }}</span>
         </div>
         <div class="content">
             {{ content | widont }}
