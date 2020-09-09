@@ -6,7 +6,7 @@
             {{ content | widont }}
         </header>
 
-        {{ collection:articles as="articles" paginate="10" }}
+        {{ collection:articles as="articles" }}
         {{ if no_results }}
         <h2 class="text-3xl italic tracking-tight">Feel the rhythm! Feel the rhyme! Get on up, it's writing time! Cool
             writings!</h2>
@@ -20,18 +20,6 @@
         </div>
         {{ /articles }}
 
-        {{ paginate }}
-        {{ if prev_page || next_page }}
-        <div class="flex justify-between text-xl -mx-16 pt-16 font-bold">
-            <a href="{{ prev_page }}" class="{{ ! prev_page ?= 'opacity-25' }}">
-                &larr; Back to the future
-            </a>
-            <a href="{{ next_page }}">
-                Forward to the past &rarr;
-            </a>
-        </div>
-        {{ /if }}
-        {{ /paginate }}
         {{ /collection:articles }}
     </article>
 </div>
