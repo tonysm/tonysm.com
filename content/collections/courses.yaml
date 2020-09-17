@@ -1,6 +1,6 @@
 title: Courses
 template: courses.show
-layout: layout
+layout: course
 revisions: false
 route: '/courses/{slug}'
 sort_dir: asc
