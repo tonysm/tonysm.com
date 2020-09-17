@@ -26,7 +26,7 @@ h1 {
         @apply mb-6 text-lg;
     }
 
-    > p:first-of-type {
+    &:not(.no-first-item-big) > p:first-of-type {
         @apply text-2xl;
     }
 

@@ -15,6 +15,7 @@ module.exports = {
             white: '#fff',
             teal: '#008483',
             'teal-light': '#a6d0cf',
+            'teal-lighter': '#c0eeec',
             gray: {
                 100: '#f7fafc',
                 200: '#edf2f7',
@@ -81,6 +82,7 @@ module.exports = {
                 '"Noto Color Emoji"',
             ],
             mono: [
+                'Monolisa',
                 'Menlo',
                 'Monaco',
                 'Consolas',

@@ -1,0 +1,9 @@
+title: Courses
+template: courses.show
+layout: layout
+revisions: false
+route: '/courses/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

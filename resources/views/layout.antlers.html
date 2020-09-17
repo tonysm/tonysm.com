@@ -10,14 +10,17 @@
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script src="{{ mix src='/js/site.js' }}"></script>
     </head>
-    <body class="bg-white font-sans leading-normal text-grey-800 px-4 sm:px-10" x-data="{ showMobileNav: false }">
-        {{ partial:nav }}
-        {{ template_content }}
-        {{ partial:footer }}
+    <body class="bg-white font-sans leading-normal text-grey-800" x-data="{ showMobileNav: false }">
+        {{ partial:promo }}
+        <div class="px-4 sm:px-10">
+            {{ partial:nav }}
+            {{ template_content }}
+            {{ partial:footer }}
 
-        <link rel="stylesheet"
-              href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/styles/default.min.css">
-        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="stylesheet"
+                  href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/styles/default.min.css">
+            <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/highlight.min.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+        </div>
     </body>
 </html>
