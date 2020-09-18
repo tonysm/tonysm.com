@@ -83,6 +83,7 @@ module.exports = {
             ],
             mono: [
                 'Monolisa',
+                'Operator Mono Book',
                 'Menlo',
                 'Monaco',
                 'Consolas',
