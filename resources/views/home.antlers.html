@@ -1,14 +1,16 @@
-<div class="max-w-5xl mx-auto relative py-16 lg:pt-40 lg:pb-32">
+<div class="max-w-5xl mx-auto relative py-16 lg:pt-40 lg:pb-16">
     <article class="content">
         <p class="font-medium text-lg text-teal">{{ subtitle }}</p>
         <h1>{{ content }}</h1>
     </article>
 </div>
 
-<div class="max-w-2xl mx-auto mb-32">
-    {{ collection:articles limit="5" as="articles" }}
+<div class="max-w-2xl mx-auto">
+    {{ collection:articles limit="10" as="articles" }}
         {{ if no_results }}
             <h2 class="text-3xl italic tracking-tight">Feel the rhythm! Feel the rhyme! Get on up, it's writing time! Cool writings!</h2>
+        {{ else }}
+            <h2 class="text-lg mb-16 italic tracking-tight text-right">These are my latest articles.</h2>
         {{ /if }}
 
         {{ articles }}
@@ -24,5 +26,8 @@
                 </p>
             </div>
         {{ /articles }}
+        <div class="text-center">
+            <a href="/articles">See all articles <svg class="inline-block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+        </div>
     {{ /collection:articles }}
 </div>

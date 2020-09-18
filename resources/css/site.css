@@ -9,6 +9,10 @@ h1 {
     @apply text-4xl font-bold leading-none mb-16;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .aspect-16\:9 {
     @apply w-full;
 }
