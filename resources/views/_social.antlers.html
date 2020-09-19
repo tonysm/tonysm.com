@@ -12,13 +12,28 @@
 <meta name="twitter:card" content="summary_large_image" />
 
 <!-- Page-specific OG, Twitter, & Meta -->
+{{ if short_description }}
+<meta name="description" content="{{ short_description }}">
+<meta property="og:description" content="{{ short_description }}">
+<meta name="twitter:description" content="{{ short_description }}">
+<meta name="twitter:title" content="{{ title }} by Tony Messias">
+{{ else }}
 <meta name="description" content="I'm a programmer from Brazil sharing thoughts and experiments.">
 <meta property="og:description" content="I'm a programmer from Brazil sharing thoughts and experiments.">
 <meta name="twitter:description" content="I'm a programmer from Brazil sharing thoughts and experiments.">
 <meta name="twitter:title" content="Tony Messias">
+{{ /if }}
 
+{{ if card_image }}
+    {{ card_image }}
+    <!-- Template-customizable Twitter -->
+    <meta name="twitter:image" content="{{ url | get:permalink }}">
+    <!-- Template-customizable OpenGraph -->
+    <meta property="og:image" content="{{ url | get:permalink }}">
+    {{ /card_image}}
+{{ else }}
 <!-- Template-customizable Twitter -->
 <meta name="twitter:image" content="{{ '/assets/site/social-card.png' | get:permalink }}?{{ id }}">
-
 <!-- Template-customizable OpenGraph -->
 <meta property="og:image" content="{{ '/assets/site/social-card.png' | get:permalink }}?{{ id }}">
+{{ /if}}

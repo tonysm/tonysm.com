@@ -1,0 +1,20 @@
+title: 'Article Social'
+fields:
+  -
+    handle: short_description
+    field:
+      type: textarea
+      listable: hidden
+      display: 'Short Description'
+      validate:
+        - string
+        - 'max:255'
+  -
+    handle: card_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: 'Card Image'
