@@ -1,15 +1,25 @@
 <?php
 
+use Tempest\Highlight\Highlighter;
+
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
 
-/**
- * You can run custom code at different stages of the build process by
- * listening to the 'beforeBuild', 'afterCollections', and 'afterBuild' events.
- *
- * For example:
- *
- * $events->beforeBuild(function (Jigsaw $jigsaw) {
- *     // Your code here
- * });
- */
+$highlighter = new Highlighter();
+
+$container['markdownParser']->code_block_content_func = function ($code, $language) use ($highlighter) {
+  $replacements = [
+    "<{{'?php'}}" => '<?php',
+    "{{'@'}}" => '@',
+    '@{{' => '{{',
+    '@{!!' => '{!!',
+  ];
+
+  // Undo Jigsaw's Blade escaping so Tempest highlights the real code.
+  $code = strtr($code, $replacements);
+
+  $highlighted = $highlighter->parse($code, $language);
+
+  // Re-escape for Blade so it doesn't interpret the highlighted output.
+  return strtr($highlighted, array_flip($replacements));
+};

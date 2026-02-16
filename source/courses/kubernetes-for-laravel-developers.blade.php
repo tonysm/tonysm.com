@@ -8,11 +8,9 @@
 @endsection
 
 @section('body')
-    <a href="/" class="z-10 inline-block px-4 py-2 mx-auto my-4 text-sm text-center no-underline bg-white border border-gray-700 rounded-full button-link back md:shadow-lg md:fixed md:top-0 md:left-5">
-        ᐊ back to home
-    </a>
+    @include('_partials.back-home-link')
 
-    <div class="prose prose-xl mx-auto pt-10 md:pt-36 ">
+    <div class="prose mx-auto pt-10 md:pt-20">
         <h1 class="text-center">Kubernetes for Laravel Developers</h1>
 
         <div class="">

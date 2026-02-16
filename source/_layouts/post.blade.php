@@ -8,20 +8,19 @@
 @endsection
 
 @section('body')
-    <a href="/" class="z-10 inline-block px-4 py-2 mx-auto my-4 text-sm text-center no-underline bg-white border border-gray-700 rounded-full button-link back md:shadow-lg md:fixed md:top-0 md:left-5">
-        ᐊ back to home
-    </a>
-    <div class="pt-10 md:pt-36 prose sm:prose-xl mx-auto">
-        <h1 class="text-center">{{ $page->title }}</h1>
+    @include('_partials.back-home-link')
 
-        <div class="flex items-center justify-center mt-4 space-x-2 font-mono text-base font-semibold text-gray-500 uppercase md:text-lg">
+    <div class="pt-10 md:pt-20 prose mx-auto">
+        <h1 class="text-center text-balance">{{ $page->title }}</h1>
+
+        <div class="flex items-center justify-center space-x-2 text-xs font-semibold text-gray-500 uppercase">
             <p>{{ $page->author }}</p>
             <span class="w-1 h-1 bg-gray-700 rounded-full"></span>
             <time datetime="{{ $page->date }}">{{ date('F j, Y', $page->date) }}</time>
         </div>
     </div>
 
-    <div class="mx-auto space-y-4 prose sm:prose-xl">
+    <div class="mx-auto space-y-4 prose">
         @yield('content')
     </div>
 @endsection

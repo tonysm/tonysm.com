@@ -1,5 +1,6 @@
 {
     "require": {
-        "tightenco/jigsaw": "^1.8"
+        "tightenco/jigsaw": "^1.8",
+        "tempest/highlight": "^2.17"
     }
 }

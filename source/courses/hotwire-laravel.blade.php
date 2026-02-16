@@ -9,11 +9,9 @@
 @endsection
 
 @section('body')
-    <a href="/"
-        class="z-10 inline-block px-4 py-2 mx-auto my-4 text-sm text-center no-underline bg-white border border-gray-700 rounded-full button-link back md:shadow-lg md:fixed md:top-0 md:left-5">
-        ᐊ back to home
-    </a>
-    <div class="pt-10 md:pt-36 prose sm:prose-xl mx-auto">
+    @include('_partials.back-home-link')
+
+    <div class="pt-10 md:pt-20 prose mx-auto">
         <div>
             <h1 class="text-center">Hotwire & Laravel</h1>
 
