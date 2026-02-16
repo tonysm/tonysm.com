@@ -13,4 +13,3 @@
  *     // Your code here
  * });
  */
-\Torchlight\Jigsaw\TorchlightExtension::make($container, $events)->boot();

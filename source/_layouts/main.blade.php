@@ -23,8 +23,9 @@
         <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <title>{{ $page->title }}</title>
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        @viteRefresh()
+        <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
+        <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
         @yield('head')
     </head>
     <body class="antialiased">
@@ -33,7 +34,7 @@
         </div>
 
         <footer class="prose prose-sm mx-auto text-center my-8">
-            <p class="">Powered by <a href="https://jigsaw.tighten.co/">Jigsaw</a>. Code highlighting by <a href="https://torchlight.dev/">Torchlight</a>.</p>
+            <p class="">Powered by <a href="https://jigsaw.tighten.co/">Jigsaw</a>.</p>
         </footer>
     </body>
 </html>

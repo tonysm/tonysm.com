@@ -1,19 +1,18 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /** Text Selection */
 
 ::-moz-selection { @apply bg-yellow-100; }
 ::selection { @apply bg-yellow-100; }
 
-/** Torchlight Code */
+/** Code Selection */
 
 pre code::-moz-selection { @apply bg-blue-600; }
 pre code::selection { @apply bg-blue-600; }
 
 *:not(pre) > code {
-    @apply bg-gray-300 bg-opacity-40 shadow-sm rounded px-1 mx-1 py-0.5 -my-0.5;
+    @apply bg-gray-300/40 shadow-xs rounded px-1 mx-1 py-0.5 -my-0.5;
 }
 
 *:not(pre) > code::before,
