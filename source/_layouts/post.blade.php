@@ -10,7 +10,7 @@
 @section('body')
     @include('_partials.back-home-link')
 
-    <div class="pt-10 md:pt-20 prose mx-auto">
+    <div class="pt-6 md:pt-10 prose mx-auto">
         <h1 class="text-center text-balance">{{ $page->title }}</h1>
 
         <div class="flex items-center justify-center space-x-2 text-xs font-semibold text-gray-500 uppercase">

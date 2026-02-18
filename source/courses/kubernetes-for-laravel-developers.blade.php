@@ -10,7 +10,7 @@
 @section('body')
     @include('_partials.back-home-link')
 
-    <div class="prose mx-auto pt-10 md:pt-20">
+    <div class="pt-6 md:pt-10 prose mx-auto">
         <h1 class="text-center">Kubernetes for Laravel Developers</h1>
 
         <div class="">
